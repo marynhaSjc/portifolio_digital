@@ -1,0 +1,318 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+/* Geral */
+body {
+  background-color: rgb(249, 244, 237);
+}
+
+nav {
+  list-style-type: none;
+  display: flex;
+  font-size: 1.5em;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  color: rgb(68, 68, 68); 
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(249, 244, 237);
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: rgb(204, 102, 102);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 90px;
+}
+
+header li {
+  margin: 0 15px;
+}
+
+#logo {
+  width: 116px;
+  height: 97px;
+}
+
+/*Responsividade no header*/
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    margin: auto;
+  }
+  nav {
+    padding: 0px 0px 15px 0px;
+    font-size: 100%;
+  }
+}
+
+/*************** HOME ************/
+/* Home Section */
+#home_section {
+  text-align: center;
+}
+
+#img_right {
+  opacity: 30%;
+  margin: 0px -30px;
+}
+
+#img_left {
+  filter: grayscale(100%);
+  opacity: 90%;
+  margin: 0px -30px;
+}
+
+#legenda {
+  background-color: rgb(204, 102, 102);
+  border-radius: 0px 0px 10px 10px;
+  color: #f9f4ed;
+  height: 70px;
+  width: 812px;
+  margin: auto;
+  margin-top: -5px;
+  padding-top: 18px;
+  font-size: 1.8em;
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+#nome {
+  font-size: 2.5em;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  color: rgb(68, 68, 68);
+  width: 812px;
+  margin: auto;
+  text-align: start;
+  padding: 30px 0px;
+}
+
+#descrição {
+  font-size: 1.6em;
+  font-family: "Bitter", Georgia, serif;
+  color: rgb(68, 68, 68);
+  text-align: justify;
+  width: 812px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+/*Responsividade no Home Section*/
+@media (max-width: 700px) {
+  #img_right {
+    display: none;
+  }
+  #img_left {
+    display: none;
+  }
+  #legenda {
+    background-color: rgb(204, 102, 102);
+    color: #f9f4ed;
+    width: auto;
+    font-size: 100%;
+  }
+  #nome {
+    font-size: 1.8em;
+    width: auto;
+    text-align: center;
+    padding-bottom: 0px;
+    margin: auto;
+  }
+  #descrição {
+    font-size: 100%;
+    width: auto;
+    padding: 30px 15px 40px;
+  }
+}
+
+/* Footer*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(204, 102, 102);
+  color: #f9f4ed;
+  height: 40px;
+  font-family: inherit;
+}
+
+/*Responsividade no Footer*/
+@media (max-width: 700px) {
+  footer {
+    font-size: 0.8em;
+  }
+}
+
+/*************** PERFIL ************/
+/*cabeçalho_geral*/
+#cabeçalho_geral {
+  color: rgb(68, 68, 68);
+  text-align: center;
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+}
+
+#título_cabeçalho {
+  font-size: 2.5em;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  padding: 30px 0px 10px;
+}
+
+#descrição_título {
+  font-size: 1em;
+  font-family: "Bitter", Georgia, serif;
+  padding-bottom: 30px;
+}
+/**********************/
+
+.título_secundário {
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+}
+
+#perfil_section {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+  font-family: "Bitter", Georgia, serif;
+  color: rgb(68, 68, 68);
+  text-align: justify;
+  padding: 50px 0px 15px 0px;
+}
+
+#perfil_right {
+  width: 20%;
+}
+
+#perfil_middle {
+  
+}
+
+#foto_middle {
+  border-radius: 500px;
+  width: 80%;
+}
+
+#perfil_left {
+  width: 20%;
+}
+
+/*Responsividade no Perfil Section*/
+@media (max-width: 700px) {
+  #perfil_section {
+    display: block;
+    font-size: 100%;
+    font-family: "Bitter", Georgia, serif;
+    color: rgb(68, 68, 68);
+    text-align: justify;
+    padding: 50px 40px 15px;
+  }
+  #perfil_right {
+    width: auto; 
+  }
+  #perfil_middle {
+    width: 188px;
+    margin: auto;
+    padding: 20px;
+  }
+  #foto_middle {
+    border-radius: 500px;
+  }
+  #perfil_left {
+    width: auto;
+  }
+}
+
+/*************** EXPERIÊNCIA ************/
+#experiência_pre-section {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0px 30px 0px;
+  color: rgb(68, 68, 68);
+  font-size: 1.8em; 
+}
+
+.experiência_section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 0px 80px 0px;
+  color: rgb(68, 68, 68);
+  font-size: 1.5em; 
+}
+
+.exp_título {
+  padding-bottom: 15px;
+  font-size: 1em;
+}
+
+#exp_right {
+  width: 60%; 
+  text-align: justify;        
+}
+
+#exp_left {
+  width: 30%;  
+  text-align: justify;  
+}
+
+/*************** PORTIFÓLIO ************/
+#projetos_section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px 0px 80px 0px;
+  font-size: 1.5em;
+  color: rgb(68, 68, 68);
+  font-weight: 700;
+}
+
+.projeto {
+  width: 40%;
+  height: 100px;
+  background-color: rgb(196, 196, 196);
+  margin: 10px;
+  text-align: center;
+  padding: 40px;
+}
+
+/*************** CONTATOS ************/
+#contato_section {
+  margin: auto; 
+  text-align: center;
+  padding: 50px 0px 40px 0px;
+}
+
+#icons {
+  padding: 100px;
+}
+
+.texto_contatos {
+  font-size: 1.6em;
+  color: rgb(68, 68, 68);
+}
