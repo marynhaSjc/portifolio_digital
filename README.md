@@ -17,8 +17,8 @@ Este projeto foi desenvolvido como parte da disciplina de Desing Digital do curs
 </div>
 
 <div>
-    <h2>Vídeo da Aplicação no Youtube Apresentando uma Navegação na Interface e Também a Explicação Duas Tags HTML de Duas Regras CSS.</h2>
-    <p>Clique (https://youtube.com.br) para assistir.<p>
+    <h2>Vídeo da Aplicação no Youtube Apresentando uma Navegação na Interface e Também a Explicação de Duas Tags HTML e Duas Regras CSS.</h2>
+    <p>Clique (https://youtu.be/alQ4LbEuJ48) para assistir.<p>
     <br>
     <h3 align="center">Grata Pela Sua Visita ao Meu Repositório. Volte Sempre!</h3>  
     
