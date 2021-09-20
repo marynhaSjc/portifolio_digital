@@ -198,7 +198,7 @@ hr {
   font-family: "Bitter", Georgia, serif;
   color: rgb(68, 68, 68);
   text-align: justify;
-  padding: 50px 0px 15px 0px;
+  padding: 50px 0px 45px 0px;
 }
 
 #perfil_right {
@@ -294,7 +294,7 @@ hr {
 
 .projeto {
   width: 40%;
-  height: 100px;
+  height: 110px;
   background-color: rgb(196, 196, 196);
   margin: 10px;
   text-align: center;
@@ -305,11 +305,11 @@ hr {
 #contato_section {
   margin: auto; 
   text-align: center;
-  padding: 50px 0px 40px 0px;
+  padding: 50px 0px 45px 0px;
 }
 
 #icons {
-  padding: 100px;
+  padding: 115px;
 }
 
 .texto_contatos {
