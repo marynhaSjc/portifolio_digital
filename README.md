@@ -21,7 +21,41 @@ Este projeto foi desenvolvido como parte da disciplina de Desing Digital do curs
     <p>Clique (https://youtu.be/alQ4LbEuJ48) para assistir.<p>
     <h2>Vídeo da Aplicação no Youtube Versão 2 - Portfólio Responsivo Mobile e Desktop.</h2>
     <p>Clique (https://youtu.be/7G2Bc7i9dXY) para assistir.<p>
-    <br>
-    <h3 align="center">Grata Pela Sua Visita ao Meu Repositório. Volte Sempre!</h3>  
+    <br>  
     
 </div>
+
+# Como executar a Minha Aplicação em um Ambiente Virtual
+## Autora: Mary Ellen Rodrigues
+
+Descrição das pastas:
+
+* doc: documentação do projeto
+* src: código-fonte do projeto e arquivos estáticos(img, css)
+
+Como construir e executar o projeto (Windows / prompt de comandos):
+1. Criar uma pasta vazia
+2. Clonar o repositório com: 
+```console 
+	git clone https://github.com/marynhaSjc/portifolio_digital.git
+```
+3. Criar um ambiente virtual com: 
+```console
+	virtualenv ENV
+```
+4. Navegar para ENV/Scripts/ e executar: 
+```console
+	activate.bat
+```
+5. Retornar a raíz da pasta criada e instalar as dependências com:  
+```console
+	pip install -r requirements.txt
+```
+6. Navegar para src/ e executar:  
+```console
+	python app.py
+```
+7. Abrir o navegador e acessar a URL informada no prompt de comando.
+
+<br>
+<h3 align="center">Grata Pela Sua Visita ao Meu Repositório. Volte Sempre!</h3>
