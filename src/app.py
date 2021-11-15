@@ -1,12 +1,28 @@
-from flask import Flask
-from flask import render_template
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
+@app.route("/") 
+@app.route("/index") 
+def home(): 
+    return render_template("index.html")
 
-@app.route('/')
-def hello():
-    return render_template('ola_mundo.html')
+@app.route("/perfil")
+def profile():
+    return render_template("perfil.html")
 
-if __name__=='__main__':
-    app.run(host='0.0.0.0')
+@app.route("/experiencia")
+def experience():
+    return render_template("experiencia.html")
+
+@app.route("/portfolio")
+def portfolio():
+    return render_template("portfolio.html")
+
+@app.route("/contato")
+def contact():
+    return render_template("contato.html")
+
+if __name__== "__main__":
+    app.run(debug=True) #host='0.0.0.0'
+   

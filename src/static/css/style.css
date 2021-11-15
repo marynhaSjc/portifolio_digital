@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Geral */
+/*Geral*/
 body {
   background-color: rgb(249, 244, 237);
 }
@@ -30,7 +30,7 @@ a:hover {
   color: rgb(249, 244, 237);
 }
 
-/* Header */
+/*HEADER*/
 header {
   width: 100%;
   background-color: rgb(204, 102, 102);
@@ -44,7 +44,7 @@ header li {
   margin: 0 15px;
 }
 
-#logo {
+#icon {
   width: 116px;
   height: 97px;
 }
@@ -53,7 +53,6 @@ header li {
 @media (max-width: 700px) {
   header {
     flex-direction: column;
-    margin: auto;
   }
   nav {
     padding: 0px 0px 15px 0px;
@@ -61,10 +60,12 @@ header li {
   }
 }
 
-/*************** HOME ************/
-/* Home Section */
+/*************** HOME-INDEX ************/
+/*Home Section*/
 #home_section {
   text-align: center;
+  width: 812px;
+  margin: auto;
 }
 
 #img_right {
@@ -78,13 +79,11 @@ header li {
   margin: 0px -30px;
 }
 
-#legenda {
+#subtitle {
   background-color: rgb(204, 102, 102);
   border-radius: 0px 0px 10px 10px;
   color: #f9f4ed;
   height: 70px;
-  width: 812px;
-  margin: auto;
   margin-top: -5px;
   padding-top: 18px;
   font-size: 1.8em;
@@ -92,56 +91,50 @@ header li {
   font-weight: 500;
 }
 
-#nome {
+#name {
   font-size: 2.5em;
   font-family: "Dosis", sans-serif;
   font-weight: 700;
   color: rgb(68, 68, 68);
-  width: 812px;
-  margin: auto;
   text-align: start;
   padding: 30px 0px;
 }
 
-#descrição {
-  font-size: 1.6em;
+#description {
+  font-size: 1.4em;
   font-family: "Bitter", Georgia, serif;
   color: rgb(68, 68, 68);
   text-align: justify;
-  width: 812px;
-  margin: auto;
   padding-bottom: 100px;
 }
 
 /*Responsividade no Home Section*/
 @media (max-width: 700px) {
+  #home_section {
+  width: auto;
+  }
   #img_right {
     display: none;
   }
   #img_left {
     display: none;
   }
-  #legenda {
-    background-color: rgb(204, 102, 102);
-    color: #f9f4ed;
-    width: auto;
-    font-size: 100%;
+  #subtitle {
+    font-size: 1.2em;
   }
-  #nome {
+  #name {
     font-size: 1.8em;
-    width: auto;
     text-align: center;
     padding-bottom: 0px;
-    margin: auto;
   }
-  #descrição {
+  #description {
     font-size: 100%;
     width: auto;
-    padding: 30px 15px 40px;
+    padding: 30px 20px 30px;
   }
 }
 
-/* Footer*/
+/*Footer*/
 footer {
   display: flex;
   align-items: center;
@@ -160,8 +153,8 @@ footer {
 }
 
 /*************** PERFIL ************/
-/*cabeçalho_geral*/
-#cabeçalho_geral {
+/*general_header*/
+#general_header {
   color: rgb(68, 68, 68);
   text-align: center;
 }
@@ -171,81 +164,97 @@ hr {
   margin: auto;
 }
 
-#título_cabeçalho {
+#header_title {
   font-size: 2.5em;
   font-family: "Dosis", sans-serif;
   font-weight: 700;
   padding: 30px 0px 10px;
 }
 
-#descrição_título {
+#title_description {
   font-size: 1em;
   font-family: "Bitter", Georgia, serif;
   padding-bottom: 30px;
 }
 /**********************/
 
-.título_secundário {
+.secondary_title {
   font-size: 1.2em;
   font-weight: 700;
   font-family: "Dosis", sans-serif;
 }
 
-#perfil_section {
+#profile_section {
   display: flex;
   justify-content: space-evenly;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-family: "Bitter", Georgia, serif;
   color: rgb(68, 68, 68);
   text-align: justify;
   padding: 50px 0px 45px 0px;
 }
 
-#perfil_right {
+#profile_right {
   width: 20%;
 }
 
-#perfil_middle {
-  
+#profile_middle {
+  text-align: center;
 }
 
-#foto_middle {
+#img_middle_rounded {
   border-radius: 500px;
   width: 80%;
 }
 
-#perfil_left {
+#profile_left {
   width: 20%;
 }
 
-/*Responsividade no Perfil Section*/
+/*Responsividade no Perfil Section*/  
 @media (max-width: 700px) {
-  #perfil_section {
-    display: block;
-    font-size: 100%;
-    font-family: "Bitter", Georgia, serif;
-    color: rgb(68, 68, 68);
-    text-align: justify;
-    padding: 50px 40px 15px;
-  }
-  #perfil_right {
-    width: auto; 
-  }
-  #perfil_middle {
-    width: 188px;
-    margin: auto;
-    padding: 20px;
-  }
-  #foto_middle {
-    border-radius: 500px;
-  }
-  #perfil_left {
-    width: auto;
-  }
+  #header_title {
+  font-size: 1.8em;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  padding: 30px 0px 10px;
+}
+.secondary_title {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
 }
 
-/*************** EXPERIÊNCIA ************/
-#experiência_pre-section {
+#profile_section {
+  padding: 30px 0px 30px 0px;
+  flex-direction: column;
+  font-size: 100%;
+  font-family: "Bitter", Georgia, serif;
+  color: rgb(68, 68, 68);
+}
+
+#profile_right {
+  width: 100%;
+  padding: 10px 30px 10px;
+}
+
+#profile_middle {
+  
+}
+
+#img_middle_rounded {
+  border-radius: 500px;
+  width: 50%;
+}
+
+#profile_left {
+  width: 100%;
+  padding: 30px 30px 0px 30px;
+}
+}
+
+/* ************** EXPERIÊNCIA *********** */
+#experiencia_pre-section {
   width: 80%;
   margin: auto;
   padding: 50px 0px 30px 0px;
@@ -253,18 +262,18 @@ hr {
   font-size: 1.8em; 
 }
 
-.experiência_section {
+.experiencia_section {
   width: 80%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px 0px 80px 0px;
+  padding: 0px 0px 30px 0px;
   color: rgb(68, 68, 68);
-  font-size: 1.5em; 
+  font-size: 1.4em; 
 }
 
-.exp_título {
+.exp_title {
   padding-bottom: 15px;
   font-size: 1em;
 }
@@ -279,6 +288,17 @@ hr {
   text-align: justify;  
 }
 
+/* Responsividade na experiencia */
+@media (max-width: 700px) {
+  #experiencia_pre-section {
+  font-size: 1.4em; 
+  padding: 30px 0px 30px 0px;
+}
+  .experiencia_section {
+  font-size: 100%; 
+} 
+}
+
 /*************** PORTIFÓLIO ************/
 #projetos_section {
   width: 80%;
@@ -287,7 +307,7 @@ hr {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 50px 0px 80px 0px;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: rgb(68, 68, 68);
   font-weight: 700;
 }
@@ -299,6 +319,16 @@ hr {
   margin: 10px;
   text-align: center;
   padding: 40px;
+}
+
+/* Responsividade no portifolio */
+@media (max-width: 700px) {
+  #projetos_section {
+  padding: 30px 0px 30px 0px; 
+  }
+  .projeto {
+    width: 100%;
+  }
 }
 
 /*************** CONTATOS ************/
@@ -313,6 +343,18 @@ hr {
 }
 
 .texto_contatos {
-  font-size: 1.6em;
+  font-size: 1.4em;
   color: rgb(68, 68, 68);
+}
+
+@media (max-width: 700px) {
+  .texto_contatos {
+  font-size: 100%;
+}
+.fa-5x {
+  font-size: 2.5em;
+}
+#contato_section {
+  padding: 30px 0px 30px 0px;
+}
 }
