@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links de CSS-->
+    <link rel="shortcut icon" href="../static/img/icon_mary_ellen.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Dosis:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js%22%3E"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js%22%3E"></script>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}" />
+    <title>Meu Portfólio</title>
+    {% endblock head %}
+</head>
+<body>
+    {% block nav %}
+    <header>
+      <a href="/index"><img src="../static/img/icon_mary_ellen.png" alt="Logo" id="icon" /></a>
+      <nav>
+        <li><a href="/perfil">Perfil</a></li>
+        <li><a href="/experiencia">Experiência</a></li>
+        <li><a href="/portfolio">Portfólio</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </nav>
+    </header>
+    {% endblock nav %}
+
+    {% block contents%}
+
+    {% endblock contents%}
+    
+</body>
+</html>

@@ -1,31 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../static/img/logo_mary_ellen.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Dosis:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../static/css/style.css" />
-    <title>Contato</title>
-  </head>
+{% extends "base.html" %}
+{% block contents %}
 
   <body>
-    <header>
-      <a href="../templates/index.html" target="_blank"><img src="../static/img/logo_mary_ellen.png" alt="Logo" id="logo" /></a>
-      <nav>
-        <li><a href="../templates/perfil.html" target="_blank">Perfil</a></li>
-        <li><a href="../templates/experiencia.html" target="_blank">Experiência</a></li>
-        <li><a href="../templates/portifolio.html " target="_blank">Portifólio</a></li>
-        <li><a href="../templates/contato.html" target="_blank">Contato</a></li>
-      </nav>
-    </header>
-
-    <div id="cabeçalho_geral">
-      <h2 id="título_cabeçalho">Contato</h2>
+   
+    <div id="general_header">
+      <h2 id="header_title">Contato</h2>
       <br /><br />  
       <hr />
     </div>
@@ -39,12 +18,14 @@
         <a href="https://www.linkedin.com/in/mary-ellen-rodrigues/" target="_blank" style="color: rgb(68, 68, 68);"><i class="fab fa-linkedin fa-5x"></i></a>
       </div>
       <a href="https://www.google.com/maps/place/S%C3%A3o+Jos%C3%A9+dos+Campos,+Sao+Jose+dos+Campos+-+State+of+S%C3%A3o+Paulo/@-23.1894443,-46.0030986,11z/data=!4m5!3m4!1s0x94cc4bb3858cc2e7:0xba25a33168f8c1!8m2!3d-23.2198396!4d-45.8915658!5m1!1e2" target="_blank" style="color: rgb(68, 68, 68);"><i class="fas fa-map-marker-alt fa-2x"></i></a>
-      <p class="texto_contatos">São José dos Campos - São Paulo - Brasil</p>
+      <p class="texto_contatos">São José dos Campos</p>
+      <p class="texto_contatos">São Paulo - Brasil</p>
     </section>
 
-    <footer>
+    <footer style="margin-top: 70px;">
       <i class="far fa-copyright" style="padding-right: 5px;"></i>
-      <h4>2021 Mary Ellen. Todos os direitos reservados.</h4>
+      <p>2021 Mary Ellen. Todos os direitos reservados.</p>
     </footer>
+{% endblock contents%}
   </body>
 </html>

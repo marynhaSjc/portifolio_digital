@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   padding: 0;
   margin: 0;
@@ -357,4 +358,365 @@ hr {
 #contato_section {
   padding: 30px 0px 30px 0px;
 }
+=======
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+/*Geral*/
+body {
+  background-color: rgb(249, 244, 237);
+}
+
+nav {
+  list-style-type: none;
+  display: flex;
+  font-size: 1.5em;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  color: rgb(68, 68, 68); 
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(249, 244, 237);
+}
+
+/*HEADER*/
+header {
+  width: 100%;
+  background-color: rgb(204, 102, 102);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 90px;
+}
+
+header li {
+  margin: 0 15px;
+}
+
+#icon {
+  width: 116px;
+  height: 97px;
+}
+
+/*Responsividade no header*/
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding: 0px 0px 15px 0px;
+    font-size: 100%;
+  }
+}
+
+/*************** HOME-INDEX ************/
+/*Home Section*/
+#home_section {
+  text-align: center;
+  width: 812px;
+  margin: auto;
+}
+
+#img_right {
+  opacity: 30%;
+  margin: 0px -30px;
+}
+
+#img_left {
+  filter: grayscale(100%);
+  opacity: 90%;
+  margin: 0px -30px;
+}
+
+#subtitle {
+  background-color: rgb(204, 102, 102);
+  border-radius: 0px 0px 10px 10px;
+  color: #f9f4ed;
+  height: 70px;
+  margin-top: -5px;
+  padding-top: 18px;
+  font-size: 1.8em;
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+#name {
+  font-size: 2.5em;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  color: rgb(68, 68, 68);
+  text-align: start;
+  padding: 30px 0px;
+}
+
+#description {
+  font-size: 1.4em;
+  font-family: "Bitter", Georgia, serif;
+  color: rgb(68, 68, 68);
+  text-align: justify;
+  padding-bottom: 100px;
+}
+
+/*Responsividade no Home Section*/
+@media (max-width: 700px) {
+  #home_section {
+  width: auto;
+  }
+  #img_right {
+    display: none;
+  }
+  #img_left {
+    display: none;
+  }
+  #subtitle {
+    font-size: 1.2em;
+  }
+  #name {
+    font-size: 1.8em;
+    text-align: center;
+    padding-bottom: 0px;
+  }
+  #description {
+    font-size: 100%;
+    width: auto;
+    padding: 30px 20px 30px;
+  }
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(204, 102, 102);
+  color: #f9f4ed;
+  height: 40px;
+  font-family: inherit;
+}
+
+/*Responsividade no Footer*/
+@media (max-width: 700px) {
+  footer {
+    font-size: 0.8em;
+  }
+}
+
+/*************** PERFIL ************/
+/*general_header*/
+#general_header {
+  color: rgb(68, 68, 68);
+  text-align: center;
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+}
+
+#header_title {
+  font-size: 2.5em;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  padding: 30px 0px 10px;
+}
+
+#title_description {
+  font-size: 1em;
+  font-family: "Bitter", Georgia, serif;
+  padding-bottom: 30px;
+}
+/**********************/
+
+.secondary_title {
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+}
+
+#profile_section {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.4em;
+  font-family: "Bitter", Georgia, serif;
+  color: rgb(68, 68, 68);
+  text-align: justify;
+  padding: 50px 0px 45px 0px;
+}
+
+#profile_right {
+  width: 20%;
+}
+
+#profile_middle {
+  text-align: center;
+}
+
+#img_middle_rounded {
+  border-radius: 500px;
+  width: 80%;
+}
+
+#profile_left {
+  width: 20%;
+}
+
+/*Responsividade no Perfil Section*/  
+@media (max-width: 700px) {
+  #header_title {
+  font-size: 1.8em;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  padding: 30px 0px 10px;
+}
+.secondary_title {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+}
+
+#profile_section {
+  padding: 30px 0px 30px 0px;
+  flex-direction: column;
+  font-size: 100%;
+  font-family: "Bitter", Georgia, serif;
+  color: rgb(68, 68, 68);
+}
+
+#profile_right {
+  width: 100%;
+  padding: 10px 30px 10px;
+}
+
+#profile_middle {
+  
+}
+
+#img_middle_rounded {
+  border-radius: 500px;
+  width: 50%;
+}
+
+#profile_left {
+  width: 100%;
+  padding: 30px 30px 0px 30px;
+}
+}
+
+/* ************** EXPERIÊNCIA *********** */
+#experiencia_pre-section {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0px 30px 0px;
+  color: rgb(68, 68, 68);
+  font-size: 1.8em; 
+}
+
+.experiencia_section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 0px 30px 0px;
+  color: rgb(68, 68, 68);
+  font-size: 1.4em; 
+}
+
+.exp_title {
+  padding-bottom: 15px;
+  font-size: 1em;
+}
+
+#exp_right {
+  width: 60%; 
+  text-align: justify;        
+}
+
+#exp_left {
+  width: 30%;  
+  text-align: justify;  
+}
+
+/* Responsividade na experiencia */
+@media (max-width: 700px) {
+  #experiencia_pre-section {
+  font-size: 1.4em; 
+  padding: 30px 0px 30px 0px;
+}
+  .experiencia_section {
+  font-size: 100%; 
+} 
+}
+
+/*************** PORTIFÓLIO ************/
+#projetos_section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px 0px 80px 0px;
+  font-size: 1.3em;
+  color: rgb(68, 68, 68);
+  font-weight: 700;
+}
+
+.projeto {
+  width: 40%;
+  height: 110px;
+  background-color: rgb(196, 196, 196);
+  margin: 10px;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Responsividade no portifolio */
+@media (max-width: 700px) {
+  #projetos_section {
+  padding: 30px 0px 30px 0px; 
+  }
+  .projeto {
+    width: 100%;
+  }
+}
+
+/*************** CONTATOS ************/
+#contato_section {
+  margin: auto; 
+  text-align: center;
+  padding: 50px 0px 45px 0px;
+}
+
+#icons {
+  padding: 115px;
+}
+
+.texto_contatos {
+  font-size: 1.4em;
+  color: rgb(68, 68, 68);
+}
+
+@media (max-width: 700px) {
+  .texto_contatos {
+  font-size: 100%;
+}
+.fa-5x {
+  font-size: 2.5em;
+}
+#contato_section {
+  padding: 30px 0px 30px 0px;
+}
+>>>>>>> 4002d99cb4b5be2f4fcd93f3273066533a811158
 }

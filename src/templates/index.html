@@ -1,40 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../static/img/logo_mary_ellen.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Dosis:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="../static/css/style.css" />
-    <title>Portifólio Digital</title>
-  </head>
-
-  <body>
-    <header>
-      <a href="../templates/index.html"><img src="../static/img/logo_mary_ellen.png" alt="Logo" id="logo" /></a>
-      <nav>
-        <li><a href="../templates/perfil.html" target="_blank">Perfil</a></li>
-        <li><a href="../templates/experiencia.html" target="_blank">Experiência</a></li>
-        <li><a href="../templates/portifolio.html " target="_blank">Portifólio</a></li>
-        <li><a href="../templates/contato.html" target="_blank">Contato</a></li>
-      </nav>
-    </header>
-
+{% extends "base.html" %}
+{% block contents %}
     <section id="home_section">
       <div>
-        <img id="img_right" src="../static/img/img_backgound_1.png" alt="" />
-        <img id="img_middle"src="../static/img/img_backgound_1.png" alt="" />
-        <img id="img_left"src="../static/img/img_backgound_1.png" alt="" />
-        <div id="legenda"><p>Um passo atrás só se for para pegar impulso.</div>
+        <img id="img_right" src="../static/img/img_backgound_1.png" alt="Foto Mary Ellen" />
+        <img id="img_middle" src="../static/img/img_backgound_1.png" alt="Foto Mary Ellen" />
+        <img id="img_left"src="../static/img/img_backgound_1.png" alt="Foto Mary Ellen" />
+        <div id="subtitle"><p>Um passo atrás só se for para pegar impulso.</div>
       </div>
-      <div id="nome">
+      <div id="name">
         <h2>Mary Ellen Rodrigues</h2>
       </div>
-      <div id="descrição">
+      <div id="description">
         <p>
           Estudante de desenvolvimento web, em transição de carreira, focando suas
           habilidades no desenvolvimento de aplicações web eficientes e dinâmicas.
@@ -44,7 +20,8 @@
 
     <footer>
       <i class="far fa-copyright" style="padding-right: 5px;"></i>
-      <h4>2021 Mary Ellen. Todos os direitos reservados.</h4>
+      <p>2021 Mary Ellen. Todos os direitos reservados.</p>
     </footer> 
+{% endblock contents %}
   </body>
 </html>
