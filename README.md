@@ -21,6 +21,11 @@ Este projeto foi desenvolvido como parte da disciplina de Desing Digital do curs
     <p>Clique (https://youtu.be/alQ4LbEuJ48) para assistir.<p>
     <h2>Vídeo da Aplicação no Youtube Versão 2 - Portfólio Responsivo Mobile e Desktop.</h2>
     <p>Clique (https://youtu.be/7G2Bc7i9dXY) para assistir.<p>
+</div>
+
+<div>
+    <h2>Link da Aplicação no Heroku.</h2>
+    <p>Clique (https://portfoliomaryellen.herokuapp.com/index) para acessar.<p>
     <br>  
     
 </div>
