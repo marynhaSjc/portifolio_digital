@@ -53,7 +53,7 @@ Como construir e executar o projeto (Windows / prompt de comandos):
 ```
 6. Navegar para src/ e executar:  
 ```console
-	python app.py
+	python wsgi.py
 ```
 7. Abrir o navegador e acessar a URL informada no prompt de comando.
 
